@@ -1,0 +1,4 @@
+99=araman=45
+98=kamal=56
+96=hasan=65
+92=zahir=85

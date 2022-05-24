@@ -6,10 +6,12 @@
 	<title>Max & Min Number</title>
 </head>
 <body>
-	<?php 
-		$a = 12;
-		$b = 20;
-		$c = 30;
+	<?php
+	if (isset($_POST['submit'])) {
+		
+		$a = $_POST['num1'];
+		$b = $_POST['num2'];
+		$c = $_POST['num3'];
 
 		$maxNum = max($a,$b,$c);
 		echo "Your Maximum number is: ".$maxNum."<br>";
@@ -17,6 +19,14 @@
 
 		$minNum = min($a,$b,$c);
 		echo "Your Minimum number is: ".$minNum."<br>";
+	}
 	?>
+
+	<form method="POST" action="">
+		<input type="number" name="num1" placeholder="1st number">
+		<input type="number" name="num2" placeholder="2st number">
+		<input type="number" name="num3" placeholder="3st number">
+		<input type="submit" name="submit" value="Submit">
+	</form>
 </body>
 </html>

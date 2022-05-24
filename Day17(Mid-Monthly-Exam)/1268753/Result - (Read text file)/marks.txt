@@ -1,0 +1,4 @@
+99=Tanem=75
+96=Rahim=80
+95=Karim=90
+92=Jobbar=95
